@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bienvenido a U.P.D.S.</title>
+<style>
+  body {
+    background-image: url('imagen.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 2s ease; /* Animación de entrada */
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    color: #ffd700; /* Cambiar el color del título */
+    animation: slideInDown 1s ease; /* Animación de entrada */
+  }
+  h2 {
+    color: #ffd700; /* Cambiar el color de los subtítulos */
+  }
+  ul, ol {
+    list-style-type: none;
+    padding-left: 20px;
+    animation: slideInLeft 1s ease; /* Animación de entrada */
+  }
+  li {
+    padding: 5px 0;
+    line-height: 1.6;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+    animation: fadeInUp 2s ease; /* Animación de entrada */
+  }
+
+  /* Estilos responsivos */
+  @media only screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    li {
+      font-size: 16px;
+    }
+  }
+
+  /* Animaciones */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Bienvenido a U.P.D.S.</h1>
+  </header>
+  <section>
+    <center><u><h2>Listas con viñetas</h2></u></center>
+    <ul>
+      <li>¡Hola! Mi nombre es Juan Andres Revollo.</li>
+      <li>Actualmente estudio ingeniería en sistemas.</li>
+      <li>Estoy emocionado por aprender y crecer en esta institución.</li>
+    </ul>
+    <center><u><h2>Listas con numeración</h2></u></center>
+    <ol>
+      <li>¡Hola! Mi nombre es Juan Andres Revollo.</li>
+      <li>Actualmente estudio ingeniería en sistemas.</li>
+      <li>Estoy emocionado por aprender y crecer en esta institución.</li>
+    </ol>
+  </section>
+  <footer class="footer">
+    <p>¡Gracias por visitar nuestra página web!</p>
+  </footer>
+</div>
+</body>
+</html>
